@@ -26,7 +26,3 @@ A premium AI show filmed at altitude in the Gulf's most iconic settings. Convers
 ## License
 
 Content: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Code: MIT.
-
----
-
-*The sky is not the limit. The AI is.*

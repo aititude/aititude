@@ -10,6 +10,8 @@
     <meta property="og:url" content="https://aititude.io">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/jpeg" href="aititude-logo.jpg">
+    <meta property="og:image" content="https://aititude.io/aititude-logo.jpg">
     <style>
         :root {
             --bg: #06080c;
@@ -167,6 +169,16 @@
             font-size: 0.8rem;
             text-align: center;
         }
+        .logo-wrap {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .logo {
+            width: 160px;
+            height: 160px;
+            border-radius: 16px;
+            object-fit: cover;
+        }
         @media (max-width: 600px) {
             .container { padding: 2rem 1.2rem; }
             .logo-text { font-size: 2.2rem; }
@@ -179,6 +191,9 @@
     <div class="container">
 
         <div class="hero">
+            <div class="logo-wrap">
+                <img src="aititude-logo.jpg" alt="AItitude" class="logo">
+            </div>
             <div class="logo-text"><span class="ai">AI</span>titude</div>
             <div class="tagline">The AI Is The Limit</div>
             <p class="hero-desc">A premium AI show filmed at altitude in the Gulf's most iconic settings. Conversations with the builders, leaders, scientists, artists, and operators who are reshaping the world through AI.</p>

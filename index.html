@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AItitude — The AI Is The Limit</title>
+    <meta name="description" content="AItitude is a premium AI show filmed at altitude in the Gulf's most iconic settings. Conversations with the builders, leaders, and operators reshaping the world through AI.">
+    <meta property="og:title" content="AItitude — The AI Is The Limit">
+    <meta property="og:description" content="Premium AI conversations at altitude. Filmed in the Gulf's most iconic settings.">
+    <meta property="og:url" content="https://aititude.io">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        :root {
+            --bg: #06080c;
+            --fg: #e2e0dd;
+            --accent: #4d9de0;
+            --accent-warm: #e8a54b;
+            --muted: #6b7280;
+            --card-bg: #0e1117;
+            --border: #1e2330;
+            --gradient-start: #4d9de0;
+            --gradient-end: #e8a54b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.7;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .logo-text {
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.3rem;
+        }
+        .logo-text .ai {
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 600;
+        }
+        .tagline {
+            font-size: 1.15rem;
+            font-style: italic;
+            color: var(--accent-warm);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        .hero-desc {
+            font-size: 1.1rem;
+            color: var(--fg);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 3.5rem;
+        }
+        h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--muted);
+            margin-bottom: 1.2rem;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+        }
+        p { margin-bottom: 1.2rem; }
+        .formats {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .format {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 1.5rem 1.2rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .format-icon { font-size: 1.6rem; margin-bottom: 0.5rem; }
+        .format-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+        }
+        .format-freq {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-warm);
+            margin-bottom: 0.5rem;
+        }
+        .format-desc {
+            font-size: 0.85rem;
+            color: var(--muted);
+            line-height: 1.5;
+        }
+        .locations {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem;
+            margin: 1.5rem 0;
+        }
+        .location {
+            padding: 0.8rem 1rem;
+            border-left: 2px solid var(--border);
+            font-size: 0.9rem;
+        }
+        .location-name { color: var(--fg); }
+        .location-detail { font-size: 0.8rem; color: var(--muted); }
+        .quote {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2rem;
+        }
+        .quote-text {
+            font-size: 1.4rem;
+            font-style: italic;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .guests {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+        .cta {
+            text-align: center;
+            margin: 3rem 0;
+            padding: 2.5rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+        .cta-title { font-size: 1.2rem; margin-bottom: 0.8rem; }
+        .cta-desc { color: var(--muted); font-size: 0.95rem; }
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        a:hover { border-bottom-color: var(--accent); }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1.2rem; }
+            .logo-text { font-size: 2.2rem; }
+            .formats { grid-template-columns: 1fr; }
+            .locations { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="hero">
+            <div class="logo-text"><span class="ai">AI</span>titude</div>
+            <div class="tagline">The AI Is The Limit</div>
+            <p class="hero-desc">A premium AI show filmed at altitude in the Gulf's most iconic settings. Conversations with the builders, leaders, scientists, artists, and operators who are reshaping the world through AI.</p>
+        </div>
+
+        <div class="section">
+            <h2>The Premise</h2>
+            <p>There is no premium AI interview show anchored in the Gulf, filmed in extraordinary settings, covering the full range of human endeavour. AItitude fills that gap.</p>
+            <p>Every episode is filmed where decisions happen: at the top of the world's tallest buildings, aboard first class suites, inside the private rooms where the future is being shaped. The setting is not a backdrop &mdash; it is a co-host.</p>
+        </div>
+
+        <div class="section">
+            <h2>Three Formats</h2>
+            <div class="formats">
+                <div class="format">
+                    <div class="format-icon">&laquo;&raquo;</div>
+                    <div class="format-name">The Brief</div>
+                    <div class="format-freq">Weekly</div>
+                    <div class="format-desc">What happened in AI this week. Fast takes, real implications. No fluff.</div>
+                </div>
+                <div class="format">
+                    <div class="format-icon">&Delta;</div>
+                    <div class="format-name">The Builder</div>
+                    <div class="format-freq">Monthly</div>
+                    <div class="format-desc">One guest who built something extraordinary with AI. Founders, developers, scientists, artists.</div>
+                </div>
+                <div class="format">
+                    <div class="format-icon">&Omega;</div>
+                    <div class="format-name">The Principal</div>
+                    <div class="format-freq">Bimonthly</div>
+                    <div class="format-desc">C-suite, ministers, sovereign wealth operators. The guests who shape policy and move capital.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Filmed At Altitude</h2>
+            <div class="locations">
+                <div class="location">
+                    <div class="location-name">Atmosphere, Burj Khalifa</div>
+                    <div class="location-detail">122nd floor &middot; 555m above Dubai</div>
+                </div>
+                <div class="location">
+                    <div class="location-name">Museum of the Future</div>
+                    <div class="location-detail">The most striking building on Earth</div>
+                </div>
+                <div class="location">
+                    <div class="location-name">Burj Al Arab Skyview</div>
+                    <div class="location-detail">321m above the Arabian Sea</div>
+                </div>
+                <div class="location">
+                    <div class="location-name">Address Sky View Pool</div>
+                    <div class="location-detail">Glass-bottomed infinity between towers</div>
+                </div>
+                <div class="location">
+                    <div class="location-name">Etihad Towers, Abu Dhabi</div>
+                    <div class="location-detail">300m above the Gulf</div>
+                </div>
+                <div class="location">
+                    <div class="location-name">Emirates First Class Suite</div>
+                    <div class="location-detail">The room no other show can replicate</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote">
+            <div class="quote-text">The sky is not the limit. The AI is.</div>
+        </div>
+
+        <div class="section">
+            <h2>Guests</h2>
+            <p class="guests">
+                AI and tech builders &middot; Cultural leaders &middot; High-performance specialists &middot; Business and finance &middot; Government and policy &middot; Creatives using AI as a tool
+            </p>
+        </div>
+
+        <div class="cta">
+            <div class="cta-title">Coming Soon</div>
+            <p class="cta-desc">Season 1 is in production. Follow for launch updates.</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 AItitude</p>
+        </div>
+    </div>
+</body>
+</html>
